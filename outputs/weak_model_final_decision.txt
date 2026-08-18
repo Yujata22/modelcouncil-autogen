@@ -1,0 +1,15 @@
+FINAL_DECISION
+
+Recommended Model: xgboost
+
+Governance Decision: REJECT
+
+Risk Level: HIGH
+
+Primary Reason: critically low recall fails to meet churn detection viability standards.
+
+Required Actions:
+1. define minimum recall threshold
+2. assess random forest against new criteria
+
+TERMINATE

@@ -1,0 +1,102 @@
+{
+    "summary": {
+        "total_scenarios": 4,
+        "correct_decisions": 2,
+        "governance_accuracy": 0.5,
+        "governance_accuracy_percent": 50.0,
+        "decision_completion_rate": 1.0,
+        "routing_completion_rate": 1.0,
+        "reviewer_timing_accuracy": 1.0,
+        "average_agent_turns": 5.0
+    },
+    "scenarios": [
+        {
+            "scenario": "healthy_model",
+            "description": "Strong overall and segment-level performance with no material subgroup weakness.",
+            "status": "COMPLETE",
+            "expected_decision": "APPROVE",
+            "actual_decision": "APPROVE_WITH_CONDITIONS",
+            "decision_correct": false,
+            "recommended_model": "XGBoost",
+            "risk_level": "MEDIUM",
+            "speaker_order": [
+                "data_scientist",
+                "risk_agent",
+                "model_evaluator",
+                "critic",
+                "final_reviewer"
+            ],
+            "routing_complete": true,
+            "premature_final_reviewer": false,
+            "agent_turns": 5,
+            "message_count": 6,
+            "stop_reason": "Text 'TERMINATE' mentioned"
+        },
+        {
+            "scenario": "segment_risk",
+            "description": "Strong overall XGBoost performance but severe degradation for high-engagement customers.",
+            "status": "COMPLETE",
+            "expected_decision": "APPROVE_WITH_CONDITIONS",
+            "actual_decision": "APPROVE_WITH_CONDITIONS",
+            "decision_correct": true,
+            "recommended_model": "XGBoost",
+            "risk_level": "HIGH",
+            "speaker_order": [
+                "data_scientist",
+                "model_evaluator",
+                "risk_agent",
+                "critic",
+                "final_reviewer"
+            ],
+            "routing_complete": true,
+            "premature_final_reviewer": false,
+            "agent_turns": 5,
+            "message_count": 6,
+            "stop_reason": "Text 'TERMINATE' mentioned"
+        },
+        {
+            "scenario": "weak_model",
+            "description": "All candidate models perform poorly and recall is inadequate for churn detection.",
+            "status": "COMPLETE",
+            "expected_decision": "REJECT",
+            "actual_decision": "APPROVE_WITH_CONDITIONS",
+            "decision_correct": false,
+            "recommended_model": "XGBoost",
+            "risk_level": "MEDIUM",
+            "speaker_order": [
+                "data_scientist",
+                "model_evaluator",
+                "risk_agent",
+                "critic",
+                "final_reviewer"
+            ],
+            "routing_complete": true,
+            "premature_final_reviewer": false,
+            "agent_turns": 5,
+            "message_count": 6,
+            "stop_reason": "Text 'TERMINATE' mentioned"
+        },
+        {
+            "scenario": "conflicting_models",
+            "description": "One model has superior recall while another has substantially higher precision, with no business cost function provided.",
+            "status": "COMPLETE",
+            "expected_decision": "APPROVE_WITH_CONDITIONS",
+            "actual_decision": "APPROVE_WITH_CONDITIONS",
+            "decision_correct": true,
+            "recommended_model": "XGBoost",
+            "risk_level": "MEDIUM",
+            "speaker_order": [
+                "data_scientist",
+                "model_evaluator",
+                "risk_agent",
+                "critic",
+                "final_reviewer"
+            ],
+            "routing_complete": true,
+            "premature_final_reviewer": false,
+            "agent_turns": 5,
+            "message_count": 6,
+            "stop_reason": "Text 'TERMINATE' mentioned"
+        }
+    ]
+}

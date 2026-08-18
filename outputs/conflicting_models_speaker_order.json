@@ -1,0 +1,11 @@
+{
+  "scenario": "conflicting_models",
+  "routing_mode": "RoundRobinGroupChat",
+  "speaker_order": [
+    "data_scientist",
+    "model_evaluator",
+    "risk_agent",
+    "critic",
+    "final_reviewer"
+  ]
+}

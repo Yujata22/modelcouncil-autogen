@@ -1,0 +1,42 @@
+{
+    "customer_value_segment": {
+        "low_value": {
+            "sample_size": 250,
+            "precision": 0.9254,
+            "recall": 0.8052,
+            "f1": 0.8611
+        },
+        "medium_value": {
+            "sample_size": 250,
+            "precision": 0.8909,
+            "recall": 0.7656,
+            "f1": 0.8235
+        },
+        "high_value": {
+            "sample_size": 250,
+            "precision": 0.8929,
+            "recall": 0.7042,
+            "f1": 0.7874
+        }
+    },
+    "engagement_segment": {
+        "low_engagement": {
+            "sample_size": 250,
+            "precision": 0.9333,
+            "recall": 0.875,
+            "f1": 0.9032
+        },
+        "medium_engagement": {
+            "sample_size": 250,
+            "precision": 0.9077,
+            "recall": 0.7763,
+            "f1": 0.8369
+        },
+        "high_engagement": {
+            "sample_size": 250,
+            "precision": 0.7826,
+            "recall": 0.45,
+            "f1": 0.5714
+        }
+    }
+}

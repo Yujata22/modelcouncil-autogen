@@ -1,0 +1,10 @@
+autogen-agentchat
+autogen-ext[openai]
+openai
+python-dotenv
+pandas
+numpy
+scikit-learn
+xgboost
+streamlit
+plotly

@@ -1,0 +1,15 @@
+FINAL_DECISION
+
+Recommended Model: xgboost
+
+Governance Decision: APPROVE_WITH_CONDITIONS
+
+Risk Level: MEDIUM
+
+Primary Reason: Superior metrics are undermined by missing calibration, latency benchmarks, and boundary stress tests.
+
+Required Actions:
+1. Provide calibration curves and threshold-specific accuracy analysis.
+2. Conduct error cost analysis and latency benchmarking.
+
+TERMINATE

@@ -1,0 +1,56 @@
+{
+    "routing_evaluation": {
+        "all_required_agents_present": true,
+        "missing_agents": [],
+        "premature_final_reviewer": false,
+        "unique_agent_count": 5,
+        "speaker_order": [
+            "data_scientist",
+            "model_evaluator",
+            "risk_agent",
+            "critic",
+            "final_reviewer"
+        ]
+    },
+    "risk_detection_evaluation": {
+        "risk_agent_participated": true,
+        "high_engagement_detected": true,
+        "recall_045_detected": true,
+        "risk_rating_detected": false
+    },
+    "critic_evaluation": {
+        "critic_participated": true,
+        "challenged_reasoning": true
+    },
+    "decision_evaluation": {
+        "final_decision_found": true,
+        "recommended_model": "Random Forest",
+        "governance_decision": "APPROVE_WITH_CONDITIONS",
+        "expected_governance_decision": "APPROVE_WITH_CONDITIONS",
+        "decision_correct": true,
+        "risk_level": "MEDIUM",
+        "valid_risk_level": true
+    },
+    "overall_evaluation": {
+        "checks": {
+            "all_required_agents_present": true,
+            "reviewer_not_premature": true,
+            "risk_agent_participated": true,
+            "high_engagement_detected": true,
+            "recall_045_detected": true,
+            "critic_participated": true,
+            "critic_challenged_reasoning": true,
+            "final_decision_found": true,
+            "correct_governance_decision": true,
+            "valid_risk_level": true
+        },
+        "passed_checks": 10,
+        "total_checks": 10,
+        "score": 1.0,
+        "score_percent": 100.0
+    },
+    "conversation_metadata": {
+        "message_count": 6,
+        "stop_reason": "Text 'TERMINATE' mentioned"
+    }
+}

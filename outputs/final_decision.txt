@@ -1,0 +1,20 @@
+FINAL_DECISION
+
+Recommended Model:
+XGBoost
+
+Governance Decision:
+APPROVE_WITH_CONDITIONS
+
+Risk Level:
+HIGH
+
+Primary Reason:
+High‑engagement customers exhibit recall = 0.45, violating the minimum business threshold; key evidence (statistical tests, cost‑benefit mapping, external validation) is missing.
+
+Required Actions:
+1. Perform statistical significance tests (e.g., McNemar) and segment‑specific threshold tuning to achieve ≥0.70 recall for high‑engagement customers.
+2. Validate on an external, real‑world test set; produce calibration plots and a quantified cost‑benefit ROI analysis.
+3. Deploy continuous monitoring with alerting for recall drift, and schedule periodic re‑training based on performance.
+
+TERMINATE

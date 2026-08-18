@@ -1,0 +1,15 @@
+FINAL_DECISION
+
+Recommended Model: Random Forest
+
+Governance Decision: APPROVE_WITH_CONDITIONS
+
+Risk Level: MEDIUM
+
+Primary Reason: Strong aggregate performance but unverified segment reliability poses deployment risk.
+
+Required Actions:
+1. Validate RF recall/precision in high-engagement segment.
+2. Provide stratified confusion matrices and calibration curves.
+
+TERMINATE

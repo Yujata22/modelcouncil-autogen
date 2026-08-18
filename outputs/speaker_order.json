@@ -1,0 +1,9 @@
+{
+    "speaker_order": [
+        "data_scientist",
+        "risk_agent",
+        "model_evaluator",
+        "critic",
+        "final_reviewer"
+    ]
+}

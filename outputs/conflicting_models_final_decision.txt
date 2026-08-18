@@ -1,0 +1,15 @@
+FINAL_DECISION
+
+Recommended Model: XGBoost
+
+Governance Decision: APPROVE_WITH_CONDITIONS
+
+Risk Level: MEDIUM
+
+Primary Reason: High recall is offset by precision risks in key segments requiring utility verification.
+
+Required Actions:
+1. Conduct threshold sensitivity analysis on business utility.
+2. Derive optimal cutoffs using calibration curves to balance false positives.
+
+TERMINATE
